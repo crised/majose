@@ -37,13 +37,13 @@ indexes greater than that number.
 The validation of the form, is implemented by casting 
 the received input form value to a float type. 
 
-###Future features
+### Future features
 For building a different country list, 
 it is encouraged to used the method
 `get_countries_dict()`. For each country it builds a dictionary, 
 with the different types of indexes. 
 
-Below is the Austria example:
+Below is the Austria country example:
 ```python
  'Austria': {'CG_SENG': {'MN': 1.3, 'TOT': 1.3, 'WMN': 1.3},
              'CG_VOTO': {'HGH': 75.0,
@@ -105,5 +105,5 @@ Below is the Austria example:
 
 
 
-###Dependencies
+### Dependencies
 Flask, Python 3

@@ -14,7 +14,7 @@ def hello():
 
     If the request is GET it will show a filtered list
     by a default threshold value.
-    :return:
+    :return: the template with arguments
     """
     if request.method == 'POST':
         try:

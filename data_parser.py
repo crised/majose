@@ -1,6 +1,5 @@
 import csv
 
-
 def parse(row, countries):
     """
     For each row it parses the data,
@@ -11,10 +10,8 @@ def parse(row, countries):
     Again, nested in that there is a dictionary with the index value for each:
     TOT, WMN, MN, HGH, LW.
 
-    Parses
     :param row: Each row of the csv file
     :param countries: Master dictionary
-    :return:
     """
     country = row[1]
     index = row[2]
@@ -47,7 +44,7 @@ def get_countries_dict():
 
     This master index can server to support to create new
     lists to create new indexes creations.
-    :return:
+    :return: the master dictionary.
     """
     with open('data.csv') as csvfile:
         countryreader = csv.reader(csvfile)
@@ -62,6 +59,16 @@ def get_countries_dict():
 
 
 def get_orderly_countries():
+    """
+    This methods get the satisfaction index
+    with total inequality (SW_LIFS, TOT).
+
+    In addition, it does not consider an entry
+    which is not a country.
+
+    The list is sorted in ascending order.
+    :return:
+    """
     countries = get_countries_dict()
     countries_list = []
     for country in countries.items():
@@ -74,7 +81,10 @@ def get_orderly_countries():
 
 def get_filtered_countries(thres=7):
     """"
-    Assume the threshold is of type number
+    Assumes the threshold is of type number.
+
+    It returns a list of countries with an index
+    above certain threshold.
     """
     countries_list = get_orderly_countries()
     for i, country_tuple in enumerate(countries_list):
