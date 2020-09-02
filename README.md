@@ -28,8 +28,9 @@ visit would be:
 You should see a list of countries
 in ascending order by their satisfaction index.
 
-![image](https://user-images.githubusercontent.com/1905839/92031830-38ca7d00-ed37-11ea-8fd6-fcd85c87c990.png)
+Sample image:
 
+![image](https://user-images.githubusercontent.com/1905839/92032785-a9be6480-ed38-11ea-9f83-afa1a51e78ae.png)
 You can enter in the input form a number, 
 in order to see only countries with satisfaction
 indexes greater than that number.
